@@ -52,5 +52,6 @@ public class ParaBankTest extends ParaBankBrowserSetup {
 		Select transactionType = new Select(webElements.gettransactionType());
 		transactionType.selectByValue("Credit");
 		webElements.getGo().click();
+		System.out.println(driver.getCurrentUrl());
 	}
 }
