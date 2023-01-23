@@ -124,4 +124,59 @@ public class ParaBankWebElements {
 	public WebElement getlogin() {
 		return login;
 	}
+	@FindBy(linkText = "Open New Account")
+	WebElement openNewAccount;
+
+	public WebElement getopenNewAccount() {
+		return openNewAccount;
+	}
+
+	@FindBy(xpath = "//*[@id=\"type\"]")
+	WebElement typeOfAccount;
+
+	public WebElement gettypeOfAccount() {
+		return typeOfAccount;
+	}
+
+	@FindBy(id = "fromAccountId")
+	WebElement fromAccountId;
+
+	public WebElement getfromAccountId() {
+		return fromAccountId;
+	}
+
+	@FindBy(xpath = "//input[@value='Open New Account']")
+	WebElement openNewAccountinitial;
+
+	public WebElement getopenNewAccount1initial() {
+		return openNewAccountinitial;
+	}
+
+	@FindBy(xpath = "//*[@id=\"newAccountId\"]")
+	WebElement newAccountID;
+
+	public WebElement getnewAccountID() {
+		return newAccountID;
+	}
+
+	@FindBy(id = "month")
+	WebElement month;
+
+	public WebElement getmonth() {
+		return month;
+	}
+
+	@FindBy(id = "transactionType")
+	WebElement transactionType;
+
+	public WebElement gettransactionType() {
+		return transactionType;
+	}
+
+	@FindBy(xpath = "//input[@value='Go']")
+	WebElement Go;
+
+	public WebElement getGo() {
+		return Go;
+	}
 }
