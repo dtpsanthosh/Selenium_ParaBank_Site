@@ -15,8 +15,9 @@ public class ParaBankBrowserSetup {
 	WebDriver driver;
 	ParaBankWebElements webElements;
 
-	@Parameters({ "browser", "url" })
+	
 	@BeforeClass
+	@Parameters({ "browser", "url" })
 	public void setup(String browser, String url) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
